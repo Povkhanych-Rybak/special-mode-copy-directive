@@ -1,0 +1,31 @@
+<h3>Option with renderer</h3>
+
+<div>
+  <span class="crypto">Some text</span>
+  <br>
+  <div #foo copy [copyValue]="newContent">Text to replace</div>
+</div>
+
+<!-- option with parent -->
+<!-- <div #parentEl>
+  <span class="crypto">Some text</span>
+  <br>
+  <div #foo copy [copyValue]="newContent" [parent]="parentEl">Text to replace</div>
+</div> -->
+
+<h4>Trial to embed the content to be rendered</h4>
+
+<div>
+  <span class="crypto">Some text</span>
+  <br>
+  <app-reusable>
+    <ng-container>
+      {{ originalContent }}
+    </ng-container>
+  </app-reusable>
+</div>
+
+
+
+
+
